@@ -1,0 +1,40 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner{
+    background: $secondcolor;
+    color: #dfc06c;
+    .content{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding: 40px;
+        .wrapper{
+            margin-left: 20px;
+            h5{
+                margin: 0;
+                color: $primaryColor;
+                font-weight: bold;
+            }
+            h6{
+                margin: 0;
+                color: $primaryColor;
+                font-size: 15px;
+            }
+        }
+    }
+}

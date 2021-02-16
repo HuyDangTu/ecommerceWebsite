@@ -1,0 +1,45 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#1d5a00;
+
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user_cart{
+    .cart_no_items{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .message{
+            margin-top: 5px;
+            font-size: 25px;
+        }
+    }
+    .cart_success{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .message{
+            margin-top: 5px;
+            font-size: 25px;
+        }
+    }
+    .uesr_cart_sum{
+        padding: 10px 0px 10px 00px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }   
+
+}

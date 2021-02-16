@@ -1,0 +1,78 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+$linkColor: #707070;
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin general{
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.register_login_container{
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px 25px 0px;
+}
+
+.register_form{
+    .register__tittle{
+        color:  $primaryColor;
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+    .register__row1, .register__row3,.register_row4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 15px;
+        .formField_container{
+            width: 49%;
+        }
+    }
+
+    .register__row2,.account_info,.personal_info{
+        padding-bottom: 15px;
+       
+    }
+    .account_info,.personal_info{
+        
+        font-weight: bold;
+    }
+
+    .register_button{
+        @include general;
+        background-color: $primaryColor;
+        color: white;
+        border: none;
+        width: 49%;
+    }
+    .formBlock{
+        width: 100%;
+        input{
+            @include general;
+            color: black;
+            box-shadow: 1px 1px 5px #CBCBCB;
+            border:none;
+        }
+    }
+    
+    a{
+        color: $linkColor;
+        text-decoration: underline;
+    }
+}
+
+

@@ -1,0 +1,93 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+$linkColor: #707070;
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin general{
+    padding: 10px;
+    width: 100%;
+
+    font-size: 15px;
+    border-radius: 5px;
+}
+.login__container{
+    .left{
+    background-image: url('../../asset/login-page/login__bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100vh; 
+    }
+}
+.signin__container{
+    @include default();
+    padding: 0px 100px 0px 100px;
+    .signin__form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input,.my_link,.signin__button,.SignUp__Link,.signin__tittle,.signin__method,.forgot__password,.error_label{
+            margin: 0px 0px 20px 0px;
+        }
+       .signin__tittle{
+            margin: 30px;
+            color:  $primaryColor;
+            font-size: 30px;
+            font-weight: bold;
+       }
+        .signin__method{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                padding: 5px;
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        .signin__button{
+            @include general;
+            background-color: $primaryColor;
+            color: white;
+            border: none;
+        }
+        .formField_container{
+        width: 100%;
+        
+        .formBlock{
+        
+            input{
+                @include general;
+                color: black;
+                box-shadow: 1px 1px 5px #CBCBCB;
+                border:none;
+            }
+        }
+        }
+        .forgot__password,.SignUp__Link{
+            a{
+                color: $linkColor;
+                text-decoration: underline;
+            }
+        }
+        .forgot__password{
+            width: 100%;
+            display: block;
+            float: left;
+        }
+    }
+
+}
+
+

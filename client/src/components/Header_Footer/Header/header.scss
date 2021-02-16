@@ -1,0 +1,70 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+$headerColor:#1a5200;
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  white;
+}
+
+.header{
+    @include default();
+    background-color: $primaryColor;
+   color: white;
+}
+
+.header__container {
+    @include default();
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+ 
+}
+.cartButton{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height:100%;
+    a{
+        color: white;
+        font-size: 25px;
+    }
+}
+.header__logo{
+    a{
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        text-transform: none;
+        font-size: 30px;
+    }
+}
+.header_row2{
+    margin-top: 10px;
+    .header__nav-page{
+        @include default();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            @include linkColor();
+        }
+    }
+    .header__nav-user{
+        @include default();
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        a{
+            @include linkColor();
+            font-weight: bold;
+        }
+        div{
+            margin-left: 15px
+        }
+    }
+}

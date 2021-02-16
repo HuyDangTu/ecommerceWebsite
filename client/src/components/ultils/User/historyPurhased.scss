@@ -1,0 +1,43 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.history_blocks{
+    table{
+        width:100%;
+        thead{
+            width: 100%;
+            tr{
+                td{
+                    padding: 10px;
+                    border-bottom: 1px solid #ddd;
+                    font-size: 20px;
+                    
+                }
+            }
+        }
+        tbody{
+            width: 100%;
+            tr{
+                td{
+                    padding: 10px;
+                    color:rgb(124, 124, 124);
+                    border-bottom: 1px solid #ddd;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+$buttonColor: #f8ba8c;
+
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+.slider_action{
+    @include text-font();
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    margin-left: 50px;
+
+ 
+    .slide_title{
+     font-size: 50px;
+     font-weight: bold;
+    }
+    .slide_low_title{
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+}
+.slider_image{
+    .my_link{
+    background-color: $buttonColor;
+    border-radius: 5px;
+    display: flex;
+    width: 160px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    a{
+        color:$primaryColor;
+        font-size: 20px; 
+        
+    }
+}
+}

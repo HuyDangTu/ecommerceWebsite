@@ -1,0 +1,26 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#1d5a00;
+
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dashboard{
+    .title{
+            font-size: 20px;
+            font-weight: bold;
+            color: #154100;
+            background: #F4F2ED;
+            padding: 10px;
+        }
+}

@@ -1,0 +1,83 @@
+$secondcolor: #F4F2ED;
+$primaryColor:#154100;
+$buttonColor: #f8ba8c;
+@mixin default{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@mixin linkColor{
+    color:  $primaryColor;
+}
+
+@mixin  text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product_detail_container{
+    width: 80%;
+    margin: 0 auto;
+    .CircularProgress{
+        
+    }
+}
+.product_detail_wrapper{
+    display: flex;
+    margin: 20px 0px 20px 0px;
+    .left{
+        .product_image_container{
+            .main_pic{
+            }
+            .main_thumbs{
+                display: flex;
+            }
+        }
+    }
+    .right{
+        padding: 20px;
+        .product_deatail{
+            .product_name{
+                background: none;
+                color: $primaryColor;
+                padding:0;
+                font-size: 35px;
+                margin-bottom: 20px;
+            }
+            .product_description{
+                margin-bottom: 20px;
+            }
+            .product_actions{
+                margin-bottom: 20px;
+                .price{
+                    font-size: 60px;
+                }
+                .cart{
+                   background: $buttonColor;
+                   color: $primaryColor;
+                   padding: 15px;
+                   text-align: center;
+                   border-radius: 5px;
+                   font-size: 20px;
+                }
+            }
+            .product_tags{
+                margin-bottom: 20px;
+                .tag{
+                   
+                    display: flex;
+                    align-items: center;
+                    .tag_text{
+                        margin-left: 10px;         
+                    }
+                }
+            }
+            .product_spectifications{
+                .item{
+                    
+                }
+            }
+        }
+    }
+}
+
